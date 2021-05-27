@@ -2,6 +2,7 @@ var inc=1000;
 clock()
 function clock(){
     const date=new Date();
+  
     const hours = ((date.getHours()+11)%12+1);
     const minutes = date.getMinutes();
     const seconds = date.getSeconds();
@@ -17,4 +18,8 @@ function clock(){
     document.querySelector('.minute').style.transform=`rotate(${minute}deg)`;
     document.querySelector('.second').style.transform=`rotate(${second}deg)`;
 }
+// document.querySelector('.dateDisplay')=innerHTML= dayjs(new Date()).format("ddd, MMM YYYY")
+document.querySelector('.timing >p').innerHTML= dayjs(new Date()).format("ddd, MMM YYYY")
+document.querySelector('.mobile_header >h4').innerHTML= dayjs(new Date()).format("ddd, MMM YYYY")
+
 setInterval(clock,inc);
