@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light" id="theme">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,16 +9,45 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+    <!-- <div class="change_theme">
+        <label>
+            <input type="checkbox" class="checkbox-btn" id="checkbox-btn" onclick="changeTheme()" checked>
+                <div class="theme_name_icon">
+                    <span id="theme_name">Dark</span>
+                    <img src="moon.png" id="theme_image" />
+                 
+               </div>
+        </label>
+    </div> -->
+    <!-- <div class="change_theme">
+        <label>
+         <input type="checkbox" class="checkbox_btn" />
+       <div class="theme_name_icon">
+            <span>Dark</span>
+            <img src="moon.png" />
+       </div>
+       </label>
+    </div> -->
     <div class="card">
         <div class="mobile_header">
-            <h4 class="dateDisplay"></h4>
+            <label>
+                <input type="checkbox" class="checkbox-btn" id="checkbox-btn" onclick="changeTheme()" checked>
+                    <div class="theme_name_icon">
+                        <img src="moon.png" id="theme_image" />
+                        <!-- <img src="sunny.png" id="sunny" style="display:none" /> -->
+                   </div>
+            </label>
             <div class="battery_status">
-                <span>48%</span>
-                <img src="battery-status.png" />
+                <span id="battery_text"></span>
+                <!-- <img src="battery-status.png" /> -->
+                <div class="battery">
+                    <div id="battery_lavel">
+
+                    </div>
+                </div>
             </div>
         </div>
         <div class="clock">
-          
             <div class="wrap">
                 <span class="twelve">12</span>
                 <span class="six">6</span>
